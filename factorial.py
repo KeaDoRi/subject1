@@ -1,3 +1,5 @@
+from functools import cache
+
 class Factorial:
     def __init__(self, num: int):
         """
@@ -14,6 +16,7 @@ class Factorial:
         else:
             return self._target * factorial(self._target-1)
 
+@cache
 def factorial(num):
     return Factorial(num)()
 
