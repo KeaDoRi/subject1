@@ -7,5 +7,8 @@ class factorial :
     
     def func_num2(self):
         return self.num
+    
+    def start(self):
+        self.factorial()
 
 f = factorial(3)
