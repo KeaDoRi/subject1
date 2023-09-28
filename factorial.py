@@ -8,9 +8,15 @@ class Factorial:
         self._target = num
     
     def __call__(self):
-        return self.play()
+        return self.start()
     
-    def play(self):
+    def start(self):
+        """
+        if target == 1, return 1
+        otherwise target * factorial(target-1)
+        :return:
+            target's factorial
+        """
         if self._target == 1:
             return 1
         else:
