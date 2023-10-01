@@ -1,4 +1,4 @@
-class factorial : 
+class factorial :
     def __init__(self, num):
         self.num = num
 
@@ -12,3 +12,14 @@ class factorial :
         self.factorial()
 
 f = factorial(3)
+
+# =================
+
+class Factorial:
+    def __init__(self):
+        pass
+    def start(self, n):
+        if n == 1:
+            return 1
+        else:
+            return self.start(n-1)*n
