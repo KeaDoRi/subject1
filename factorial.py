@@ -1,6 +1,7 @@
 from functools import cache
 
-class Factorial:
+
+class Factorial:  # pep8 guide
     def __init__(self, num: int):
         """
         num: int, target for factorial
@@ -28,3 +29,4 @@ def factorial(num):
 
 if __name__=='__main__':
     print(factorial(11))
+
