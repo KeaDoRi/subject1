@@ -7,10 +7,10 @@ class Factorial:  # pep8 guide
         num: int, target for factorial
         """
         self._target = num
-    
+
     def __call__(self):
         return self.start()
-    
+
     def start(self):
         """
         if target == 1, return 1
@@ -21,12 +21,13 @@ class Factorial:  # pep8 guide
         if self._target == 1:
             return 1
         else:
-            return self._target * factorial(self._target-1)
+            return self._target * factorial(self._target - 1)
+
 
 @cache
 def factorial(num):
     return Factorial(num)()
 
-if __name__=='__main__':
-    print(factorial(11))
 
+if __name__ == '__main__':
+    print(factorial(11))
